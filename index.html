@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Julián Román: soporte técnico de celulares, PC y consolas, y desarrollo web en formación. Estudiante de Programación Informática en la UNQ.">
+  <title>Julián Román | Soporte técnico y desarrollo web</title>
+  <style>
+    :root{
+      --bg:#f6f7f9; --panel:#ffffff; --ink:#1b2430; --muted:#5b6675;
+      --brand:#1f3a5f; --accent:#2a9d8f; --line:#e1e5ea; --radius:14px;
+    }
+    @media (prefers-color-scheme: dark){
+      :root:not([data-theme="light"]){
+        --bg:#0f141b; --panel:#171e28; --ink:#e8edf3; --muted:#9aa6b4;
+        --brand:#8fb4e3; --accent:#4cc3b5; --line:#263140;
+      }
+    }
+    :root[data-theme="dark"]{
+      --bg:#0f141b; --panel:#171e28; --ink:#e8edf3; --muted:#9aa6b4;
+      --brand:#8fb4e3; --accent:#4cc3b5; --line:#263140;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+    a{color:var(--brand)}
+    .wrap{width:min(1080px,calc(100% - 32px));margin:0 auto}
+    header{position:sticky;top:0;z-index:5;background:var(--panel);border-bottom:1px solid var(--line)}
+    .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;height:64px}
+    .brand{font-weight:700;color:var(--ink);text-decoration:none}
+    .nav-links{display:flex;gap:18px;font-size:14px}
+    .nav-links a{color:var(--muted);text-decoration:none}
+    .nav-links a:hover{color:var(--brand)}
+    .btn{display:inline-block;padding:11px 18px;border-radius:999px;background:var(--brand);color:#fff;text-decoration:none;font-weight:600;font-size:14px}
+    .btn.ghost{background:transparent;color:var(--brand);border:1px solid var(--brand)}
+    .btn:hover{opacity:.9}
+    section{padding:64px 0}
+    h1{font-size:clamp(32px,5vw,48px);line-height:1.15;margin:8px 0 14px}
+    h2{font-size:28px;margin:0 0 8px}
+    .eyebrow{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700}
+    .lead{color:var(--muted);max-width:620px;font-size:18px}
+    .hero{padding:72px 0 56px}
+    .hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+    .grid{display:grid;gap:18px}
+    .grid.two{grid-template-columns:repeat(2,1fr)}
+    .grid.three{grid-template-columns:repeat(3,1fr)}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px}
+    .card h3{margin:0 0 6px;font-size:18px}
+    .card p{margin:0 0 12px;color:var(--muted);font-size:15px}
+    .tags{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0}
+    .tags span{font-size:12px;padding:4px 10px;border-radius:999px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+    .card .links{display:flex;gap:14px;flex-wrap:wrap;font-size:14px;font-weight:600}
+    .tag-status{display:inline-block;font-size:12px;font-weight:700;color:var(--accent);margin-bottom:6px}
+    ul.clean{margin:0;padding-left:18px;color:var(--muted)}
+    ul.clean li{margin:4px 0}
+    .about{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skills span{padding:7px 12px;border-radius:8px;background:var(--panel);border:1px solid var(--line);font-size:14px}
+    .contact-box{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+    footer{border-top:1px solid var(--line);padding:24px 0;color:var(--muted);font-size:14px}
+    @media (max-width:820px){
+      .grid.three{grid-template-columns:1fr}
+      .grid.two,.about{grid-template-columns:1fr}
+      .nav-links{display:none}
+      section{padding:48px 0}
+      .hero{padding:48px 0 40px}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="wrap nav">
+      <a class="brand" href="#inicio">Julián Román</a>
+      <nav class="nav-links">
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+      <a class="btn" href="https://wa.me/5491124075273?text=Hola%20Juli%C3%A1n!%20Quiero%20consultar%20por%20un%20servicio." target="_blank" rel="noopener">WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="wrap">
+        <div class="eyebrow">Soporte técnico · Desarrollo web</div>
+        <h1>Reparo tu celular, tu PC y tu consola. Y estoy aprendiendo a crear sitios web.</h1>
+        <p class="lead">Soy Julián, de Plátanos (Berazategui). Hago reparaciones desde hace dos años y programo todos los días. En marzo de 2027 empiezo la Tecnicatura Universitaria en Programación Informática en la UNQ.</p>
+        <div class="hero-actions">
+          <a class="btn" href="#proyectos">Ver proyectos</a>
+          <a class="btn ghost" href="#contacto">Contactarme</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios">
+      <div class="wrap">
+        <div class="eyebrow">Servicios · JRsertec</div>
+        <h2>Reparaciones técnicas</h2>
+        <p class="lead">Trabajo con clientes de la zona. Si no sabés qué falla, escribime y lo vemos.</p>
+        <div class="grid three" style="margin-top:28px">
+          <article class="card">
+            <h3>Celulares</h3>
+            <ul class="clean">
+              <li>Cambio de módulos (pantallas)</li>
+              <li>Placas de carga</li>
+              <li>Cambio de batería</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>PC</h3>
+            <ul class="clean">
+              <li>Mantenimiento y limpieza</li>
+              <li>Cambio de disco duro</li>
+              <li>Cambio de puertos</li>
+              <li>Instalación de sistemas operativos</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Consolas</h3>
+            <ul class="clean">
+              <li>Mantenimiento general</li>
+              <li>Cambio de puertos</li>
+              <li>Reparaciones de hardware</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="proyectos">
+      <div class="wrap">
+        <div class="eyebrow">Proyectos</div>
+        <h2>Lo que estoy construyendo</h2>
+        <p class="lead">Sitios que hice para negocios y proyectos de práctica. Cada uno tiene su código público.</p>
+        <div class="grid two" style="margin-top:28px">
+          <article class="card">
+            <span class="tag-status">Sitio para cliente · Plátanos</span>
+            <h3>Oli_Nails23 · Salón de uñas</h3>
+            <p>Página con servicios, precios y reserva de turnos. La reserva se envía por WhatsApp para que la dueña confirme el horario.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="links">
+              <a href="https://julianroman98.github.io/Olii_nails23/" target="_blank" rel="noopener">Ver sitio ↗</a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="tag-status">Sitio para cliente · Bernal</span>
+            <h3>3L Sublimación · Estampados</h3>
+            <p>Catálogo de productos personalizados, consultas para pedidos mayoristas y formulario que abre WhatsApp con el mensaje listo.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="links">
+              <a href="https://julianroman98.github.io/3l-sublimacion/" target="_blank" rel="noopener">Ver sitio ↗</a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="tag-status">Proyecto de práctica</span>
+            <h3>Trivia de fútbol</h3>
+            <p>Juego de preguntas de fútbol. Lo hice para practicar HTML, CSS y JavaScript, separando la estructura, los estilos y la lógica en archivos distintos.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            <div class="links">
+              <a href="https://github.com/Julianroman98" target="_blank" rel="noopener">Ver código en GitHub ↗</a>
+            </div>
+          </article>
+          <article class="card">
+            <span class="tag-status">En desarrollo</span>
+            <h3>Web de JRsertec</h3>
+            <p>Sitio de mi negocio de reparaciones: servicios, zona de atención y contacto directo por WhatsApp.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre-mi">
+      <div class="wrap about">
+        <div>
+          <div class="eyebrow">Sobre mí</div>
+          <h2>Técnico con ganas de programar</h2>
+          <p class="lead" style="font-size:16px">Antes de programar, trabajé en atención al cliente, logística y reposición. Eso me enseñó a coordinar con clientes y proveedores, y a cumplir con los plazos. Hoy combino eso con la reparación de equipos y el desarrollo web.</p>
+          <p class="lead" style="font-size:16px">Estoy aprendiendo de forma autodidacta y empiezo la carrera en marzo de 2027.</p>
+        </div>
+        <div>
+          <div class="eyebrow">Tecnologías</div>
+          <div class="skills" style="margin-top:14px">
+            <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Git y GitHub</span><span>Linux (básico)</span><span>Python (inicial)</span><span>Reparación de hardware</span><span>Inglés intermedio</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contacto">
+      <div class="wrap">
+        <div class="contact-box">
+          <div>
+            <div class="eyebrow">Contacto</div>
+            <h2 style="margin-top:6px">¿Tenés un equipo para reparar o una idea para tu negocio?</h2>
+            <p class="lead" style="font-size:16px;margin:0">Escribime por WhatsApp o por mail.</p>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <a class="btn" href="https://wa.me/5491124075273?text=Hola%20Juli%C3%A1n!%20Quiero%20consultar%20por%20un%20servicio." target="_blank" rel="noopener">WhatsApp · 11 2407-5273</a>
+            <a class="btn ghost" href="mailto:julianroman498@gmail.com">julianroman498@gmail.com</a>
+            <a class="btn ghost" href="https://github.com/Julianroman98" target="_blank" rel="noopener">GitHub · Julianroman98</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Julián Román · Plátanos, Berazategui · Hecho con HTML, CSS y JavaScript.</div>
+  </footer>
+</body>
+</html>
